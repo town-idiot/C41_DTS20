@@ -56,4 +56,12 @@
     display: block !important;
   }
 
+  .website{
+    display: none;
+  }
+
+  .mobile{
+    display: block;
+  }
+
 }

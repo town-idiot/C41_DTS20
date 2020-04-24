@@ -158,7 +158,7 @@ header {
   background-color: black;
   width:100%;
   color: #fff;
-  height: 100px;
+  height: 100%;
   display:inline-block;
   margin-bottom: -10px;
 }
@@ -192,4 +192,25 @@ input, textarea {
 
 .contact-form p {
   padding-bottom: 5px;
+}
+
+.footer-right {
+  float:right;
+}
+
+.footer-right li{
+  color:white;
+  text-align: right;
+  font-size: 12pt;
+}
+
+.footer-mobile {
+  padding:20px;
+  color:white;
+  text-align: center;
+  font-size: 10pt;
+}
+
+.mobile{
+  display: none;
 }

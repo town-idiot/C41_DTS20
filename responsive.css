@@ -17,7 +17,6 @@
     font-size: 24px;
   }
 
-
 }
 
 /* for Smartphone */
@@ -41,7 +40,7 @@
   }
 
   .contact-form {
-    float:left;
+    float:center;
     padding: 25px 10px;
   }
 
@@ -54,8 +53,7 @@
   }
 
   .menu-icon {
-    display: block ;
+    display: block !important;
   }
-
 
 }

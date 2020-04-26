@@ -84,11 +84,11 @@
 
   .profil {
     width: 100%;
-    padding: 5px 0px;
+    padding: 20px 0px;
   }
 
   .teams{
-    padding-bottom: 1620px;
+    padding-bottom: 1800px;
   }
 
   .card img {
@@ -100,16 +100,24 @@
 @media (min-width: 670px) and (max-width: 1000px) {
   .profil {
     width: 50%;
-    padding: 5px 0px;
+    padding: 20px 0px;
   }
 
   .teams{
-    padding-bottom: 750px;
+    padding-bottom: 800px;
   }
 }
 
 @media (max-width: 400px) {
   .header-right.responsive a {
     transform: translate(0px, 0px);
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .teams{
+    padding-bottom: 1650px;
   }
 }

@@ -107,3 +107,9 @@
     padding-bottom: 750px;
   }
 }
+
+@media (max-width: 400px) {
+  .header-right.responsive a {
+    transform: translate(0px, 0px);
+  }
+}

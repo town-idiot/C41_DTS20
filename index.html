@@ -4,19 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group C41</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="./js/jquery.min.js"></script>
   </head>
-  <body>
-    <header>
+  <body id="body">
+    <header id="header">
       <div class="container">
-        <div class="header-logo">C41</div>
-        <span class="fa fa-bars menu-icon"></span>
-        <div class="header-right">
-          <a href="#">About Us</a>
-          <a href="#">Updates</a>
-          <a href="#">FAQ</a>
+        <a href="#body"><span class="header-logo">C41</span></a>
+        <a href="javascript:void(0);" class="menu-icon" onclick="navigator()"><i class="fa fa-bars"></i></a>
+        <div class="header-right" id="Topnav">
+          <a href="#about">About Us</a>
+          <a href="#team">Our Team</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </header>
@@ -25,13 +26,13 @@
         <h1>Group C41</h1>
         <p>Welcome to our group's page</p>
         <div class="btn-wrapper">
-          <a href="#" class="btn seemore">See More</a>
+          <a href="#about" class="btn seemore">See More</a>
         </div>
       </div>
     </div>
-    <div class="contents">
+    <div class="contents" id="about">
       <div class="container">
-        <div class="heading"><h3>Group Details</h3></div>
+        <div class="heading"><h3>About Us</h3></div>
         <div class="food-content">
           <div class="content">
             <img class="gambar" src="https://image.flaticon.com/icons/svg/2640/2640788.svg">
@@ -53,7 +54,64 @@
         </div>
       </div>
     </div>
-    <div class="contact-form">
+    <div class="teams" id="team">
+      <div class="container">
+        <div class="heading"><h3>Our Team</h3></div>
+          <div class="team">
+            <div class="profil">
+              <div class="card">
+                <img src="./img/no_img.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>Cita Wijaya</b></h4> 
+                  <p>Ketua Grup</p> 
+                </div>
+              </div>
+            </div>
+
+            <div class="profil">
+              <div class="card">
+                <img src="./img/pras.png">
+                <div class="container">
+                  <h4><b>Deny Prasetyo</b></h4> 
+                  <p>Anggota 1</p> 
+                </div>
+              </div>
+            </div>
+
+            <div class="profil">
+              <div class="card">
+                <img src="./img/no_img.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>Devi Junitasari</b></h4> 
+                  <p>Anggota 2</p> 
+                </div>
+              </div>
+            </div>
+
+            <div class="profil">
+              <div class="card">
+                <img src="./img/no_img.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>David Wahyudi</b></h4> 
+                  <p>Anggota 3</p> 
+                </div>
+              </div>
+            </div>
+
+            <div class="profil">
+              <div class="card">
+                <img src="./img/no_img.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                  <h4><b>Eko Pramono</b></h4> 
+                  <p>Anggota 4</p> 
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+    <div class="contact-form" id="contact">
       <div class="container-form">
         <div class="form">
           <h3 class="section-title">Talk to us!</h3>
@@ -86,6 +144,34 @@
         </div>
       </div>
     </div>
+
+  <script>
+    function navigator() {
+      var h = document.getElementById("header");
+      var x = document.getElementById("Topnav");
+      if (x.className === "header-right") {
+        x.className += " responsive";
+        h.className += "nav";
+      } else {
+        x.className = "header-right";
+        h.className = "";
+      }
+    }
+    
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 500, function(){
+            window.location.hash = hash;
+          });
+        } 
+      });
+    });
+  </script>
 
   </body>
 </html>

@@ -44,7 +44,6 @@ li {
 }
 
 header {
-  height: 90px;
   width: 100%;
   background-color: #222f3e;
   position: fixed;
@@ -81,10 +80,13 @@ header {
   color: white;
   float: right;
   font-size: 30px!important;
-  padding: 30px 40px;
+  padding: 25px 40px;
   display: none!important;
 }
 
+.menu-icon:hover {
+  background-color: #576574;
+}
 .container {
   max-width: 1170px;
   width: 100%;
@@ -119,6 +121,7 @@ header {
 }
 
 .contents {
+  margin-top: -30px;
   padding-bottom: 80px;
   padding-left: 10%;
   padding-right: 10%;
@@ -145,6 +148,7 @@ header {
   padding-bottom: 30px;
   padding-top: 80px;
   border-bottom: 2px solid #576574;
+  font-size: 28px;
 }
 
 .footer-logo {
@@ -213,4 +217,57 @@ input, textarea {
 
 .mobile{
   display: none;
+}
+
+.teams {
+  margin-top: -30px;
+  padding-bottom: 300px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #222f3e;
+  text-align: center;
+}
+
+.teams .heading h3 {
+  padding-bottom: 30px;
+  padding-top: 80px;
+  border-bottom: 2px solid white;
+  font-size: 28px;
+  color: white;
+}
+
+.profil {
+  width: 20%;
+  float: left;
+}
+
+.card {
+  width: 90%;
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: white;
+  margin: auto;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(255,255,255,0.3);
+  transform:translateY(-6px);
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+  width:100%;
+  height: 140px;
+}
+
+.teams .container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.card .container{
+  padding: 2px 16px;
+  line-height: 5px;
 }

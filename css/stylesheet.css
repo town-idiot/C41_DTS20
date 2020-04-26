@@ -187,6 +187,11 @@ input, textarea {
   color:#889eab;
 }
 
+.contact-submit:hover {
+  background-color: #222f3e;
+  color:white;
+}
+
 .section-title {
   border-bottom: 2px solid #dee7ec;
   font-size: 28px;

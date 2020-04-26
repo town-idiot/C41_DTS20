@@ -19,9 +19,23 @@ li {
   clear:left;
 }
 
+@-webkit-keyframes changeBg{
+    0%   {background-image: url("../bg/blue.jpg");}
+    25%   {background-image: url("../bg/code.jpg");}
+    50%   {background-image: url("../bg/busybee.jpg");}
+    100%   {background-image: url("../bg/touch.jpg");}
+}
+
+@keyframes animate {
+  0%   { opacity: 0; filter: saturate}
+  10%  { opacity: 0; }
+  90%  { opacity: 1; }
+}
+
 
 .top-wrapper {
-  background-image: url(https://cdn.dribbble.com/users/637758/screenshots/3662491/busy_bee_.jpg);
+  /*background-image: url(https://cdn.dribbble.com/users/637758/screenshots/3662491/busy_bee_.jpg);*/
+  -webkit-animation:changeBg 5s infinite; 
   padding: 180px 0 100px 0;
   background-size:cover;
   color: black;
